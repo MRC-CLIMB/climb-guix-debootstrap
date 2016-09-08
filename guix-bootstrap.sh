@@ -62,7 +62,7 @@ CLIMB_GUIX_REPO_DIR="${HOME}/climb-guix-recipes"
 export GUIX_PACKAGE_PATH="${GUIX_PACKAGE_PATH}:${CLIMB_GUIX_REPO_DIR}"
 
 # Set up GUIX_LOCPATH so guix libc can find locales.
-export GUIX_LOCPATH="${HOME}/.guix-profile/lib/local"
+export GUIX_LOCPATH="${HOME}/.guix-profile/lib/locale"
 
 # $GUIX_PROFILE does not exist until the user has installed something.
 if [ -d "${GUIX_PROFILE}" ]; then
