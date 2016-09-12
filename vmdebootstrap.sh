@@ -7,7 +7,7 @@
 : ${IMAGE_NAME:=climb-guix-vm.img}
 : ${IMAGE_SIZE:=2000000000} # 2GB
 : ${PACKAGE_LIST:=openssh-server,sudo,cloud-init,cloud-initramfs-growroot,\
-qemu-guest-agent,curl,git,locales-all}
+qemu-guest-agent,curl,git,locales-all,ncurses-term}
 
 sudo vmdebootstrap --verbose --enable-dhcp --grub --sparse --arch=${ARCH} \
      --distribution=${DISTRIBUTION} --serial-console --configure-apt \
